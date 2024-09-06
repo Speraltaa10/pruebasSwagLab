@@ -14,7 +14,6 @@ Cypress.Commands.add('clearAllBeforeVisit', () => {
     cy.clearLocalStorage()
     cy.clearAllCookies()
     cy.visit('https://www.saucedemo.com')
-    cy.wait (3000)
 })
 
 Cypress.Commands.add('login', (userName, password) =>{
